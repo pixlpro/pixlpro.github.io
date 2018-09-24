@@ -37,6 +37,9 @@
             margin: 0;
             background-color: black;
         }
+        main {
+            display: none;
+        }
         .header {
             height: 85vh;
         }
@@ -45,10 +48,8 @@
             color: whitesmoke;
         }
         header h1 {
-            padding-top: 14vh;
             font-size: 600%;
             line-height: 60px;
-            animation: h1 3s ease-in-out infinite;
             transition: 2s;
         }
         header p {
@@ -184,19 +185,22 @@
             background-color: black;
             border: 1px solid black;
         }
-        .black {
-            color: black;
+        .header a {
+            color: white;
+        }
+        .a {
+            padding-top: 14vh;
         }
         @media (min-width: 768px) {
             .main-menu {
                 height: 0;
                 width: 0;
             }
-            .main-menu h1, .main-menu p, .main-menu hr {
+            .main-menu h1, .main-menu p {
                 display: none;
             }
-            header h1 {
-                padding-top: 24vh;
+            .a {
+                padding-top: 12vh;
             }
             .line {
                 width: 90%;
@@ -208,11 +212,11 @@
                 height: 0;
                 width: 0;
             }
-            .main-menu h1, .main-menu p, .main-menu hr {
+            .main-menu h1, .main-menu p {
                 display: none;
             }
-            header h1 {
-                padding-top: 30vh;
+            .a {
+                padding-top: 24vh;
             }
             .line {
                 width: 90%;
@@ -227,17 +231,19 @@
 <body>
     <header>
         <div id="menu" class="main-menu">
-            <h1>Ele<br>App</h1>
+            <h1 class="a">Мы</h1>
+            <h1 class="b">скоро</h1>
+            <h1 class="c">вернёмся</h1>
             <div id="btn" class="menu-open"></div>
-            <hr class="black">
-            <p>Большие новости</p> 
-            <p>Большие инновации</p>
+            <p>Смотрите</p> 
+            <p><a href="">Скоро</a></p>
         </div>
         <div class="header">
-            <h1>Ele<br>App</h1>
-            <hr>
-            <p>Большие новости</p> 
-            <p>Большие инновации</p> 
+            <h1 class="a">Мы</h1>
+            <h1 class="b">скоро</h1>
+            <h1 class="c">вернёмся</h1>
+            <p>Смотрите</p> 
+            <p><a href="">Скоро</a></p>
         </div>
     </header>
     <main>
@@ -263,7 +269,6 @@
         </div>
     </main>
     <footer>
-        <h2 class="data">В НОВОМ ГОДУ</h2>
         <h2>Powered by Ele</h2>
     </footer>
     <script>
