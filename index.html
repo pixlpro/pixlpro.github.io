@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ele</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+        @keyframes gradient {
+            from {
+                background: rgb(238,38,38);
+            }
+            15% {
+                background: rgb(247,131,14);
+            }
+            30% {
+                background: rgb(243,243,15);
+            }
+            45% {
+                background: rgb(73,206,24);
+            }
+            60% {
+                background: rgb(24,182,206);
+            }
+            75% {
+                background: rgb(28,55,236);
+            }
+            90% {
+                background: rgb(208,28,236);
+            }
+            to {
+                background: rgb(238,38,38);
+            }
+        }
+        header {
+            font-family: 'Pt Sans';
+            color: black;
+            text-align: center;
+            font-size: 300%;
+            margin-bottom: 30vh;
+        }
+        footer {
+            font-family: 'Pt Sans';
+            color: black;
+            text-align: center;
+            font-size: 100%;
+            margin-bottom: 50px;
+        }
+        main {
+            font-family: 'Pt Sans';
+            text-align: center;
+        }
+        .head_logo {
+            background: url('logo.png') 50%/contain no-repeat;
+            height: 40vh;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 15vh;
+        }
+        .download {
+            padding-top: 35px;
+            box-sizing: border-box;
+            color: white;
+            font-size: 300%;
+            margin-left: 10%;
+            width: 80%;
+            height: 150px;
+            border-radius: 100px;
+            transition: 2s;
+            animation: gradient 20s linear infinite;
+        }
+        a {
+            display: none;
+            text-decoration: none;
+        }
+        .none {
+            font-family: 'Pt Sans';
+            text-align: center;
+            padding-top: 36px;
+            box-sizing: border-box;
+            color: white;
+            font-size: 150%;
+            margin-left: 5%;
+            width: 90%;
+            padding-bottom: 36px;
+            border-radius: 100px;
+            transition: 2s;
+            animation: gradient 20s linear infinite;
+            margin-bottom: 175px;
+        }
+        #update {
+            width: 60%;
+            height: 100px;
+            padding-top: 5px;
+            margin-top: 10px;
+        }
+        #update_text {
+            font-size: 70%;
+
+        }
+        @media (max-width: 768px) {
+            #vk_community_messages {
+                display: none;
+            }
+        }
+        @media (min-width: 768px) {
+            .none {
+                padding-top: 35px;
+                font-size: 200%;
+                margin-left: 25%;
+                width: 50%;
+            }
+        }
+        @media (min-width: 1366px) {
+            a {
+                display: block;
+            }
+            .none {
+                display: none;
+            }
+            .download {
+                margin-left: 40%;
+                width: 20%;
+                margin-bottom: 30px;
+            }
+            #update {
+                width: 15%;
+                height: 100px;
+                padding-top: 25px;
+                margin-top: 10px;
+                margin-left: 42.5%;
+                margin-bottom: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+    	VK.Widgets.CommunityMessages("vk_community_messages", 167673534, {tooltipButtonText: "Есть вопрос?"});
+    </script>
+    <header>
+        <div class="head_logo"></div>
+        <h1>Ele</h1>
+    </header>
+    <main>
+
+        <div class="none">К сожалению, данное приложение несовместимо с Вашим устройством.</div>
+        <a href="https://drive.google.com/uc?export=download&confirm=oiPz&id=1eKNDGJzs4dS3jYuVljLlxWLnU1qYkcTC"><div class="download">Скачать</div></a>
+        <a id="update_text" href="https://drive.google.com/uc?authuser=0&id=1QyqxEI-3aabtgbdfYLqgUPCqSYDtoVFW&export=download"><div class="download" id="update">Обновить</div></a>
+    </main>
+    <footer>
+        <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
+    </footer>
+</body>
+</html>
