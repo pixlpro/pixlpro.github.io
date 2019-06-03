@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/animate.css" type="text/css" rel="stylesheet" />
+  <title>Ele</title>
+</head>
+
+<body>
+  <header>
+    <div id="menu_mobile" class="menu_mobile">
+      <div id="btn_mobile" class="btn_mobile"></div>
+      <div id="space"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#main"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Главная</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#about"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">О нас</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#projects"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Проекты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#contacts"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Контакты</div>
+              </button></a>
+          </li>
+        </ul>
+    </div>
+    <div id="menu">
+        <nav>
+          <ul>
+            <li>
+              <div id="icon"><a href="#main"></a></div>
+            </li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#">Скачать</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+  <main>
+    <section id="main">
+      <video id="overlay" src="background.mp4" autoplay loop muted></video>
+      <div id="main_img" class="visible"></div>
+      <h1 class="visible">Ele</h1>
+    </section>
+    <section id="about">
+      <h2 id="tagline">Вместе мы сделаем этот мир лучше*</h2>
+      <h3 class="our_text">Наша команда</h3>
+      <div id="about_img" class="circle_photo">
+        <h4 class="name">Владимир Вартанян</h4>
+      </div>
+      <p class="description">
+        Обычный школьник, очкарик &#129299;, супер-программист <br />
+        Очень умный, добрый и скромный человек <br /><br />
+        А ещё ленивый и;
+      </p>
+      <div id="blur_text">
+        <p id="oh_text">Ой</p>
+      </div>
+      <p class="note">*Но это не точно</p>
+    </section>
+    <section id="projects">
+      <h2 id="tagline">Красивый заголовок*</h2>
+      <h3 class="our_text">Наши проекты</h3>
+      <a href="./smartbook">
+        <div id="smartbook_img" class="app_icon circle_photo circle_middle">
+          <h4 class="name photo_text">Smartbook</h4>
+        </div>
+      </a>
+      <div class="hr"></div>
+      <a href="">
+        <div id="savetheprincess_img" class="app_icon circle_photo circle_middle">
+          <h4 class="name photo_text photo_text_double">Save the Princess</h4>
+        </div>
+      </a>
+      <div class="hr hr_alternate"></div>
+      <a href="">
+        <div id="monuments_img" class="app_icon circle_photo circle_middle">
+          <h4 class="name photo_text">Monuments</h4>
+        </div>
+      </a>
+      <p class="description">
+        Нажми на иконку приложения, чтобы "скачать"
+      </p>
+      <p class="note">*Необходимо наличие Ele на ПК. <br> Пока что только для Windows.</p>
+    </section>
+    <section id="contacts">
+      <h2 id="tagline">Да прибудет с Вами связь!</h2>
+      <h3 class="our_text">Наши контакты*</h3>
+      <div id="phone" class="circle_photo circle_photo_contacts">
+        <h4 class="name photo_text_contacts"><a href="">8 (800) 555-35-35</a></h4>
+      </div>
+      <div class="hr"></div>
+      <div id="email" class="circle_photo circle_photo_contacts">
+        <h4 class="name photo_text_contacts"><a href="">ele@ele.com</a></h4>
+      </div>
+      <p class="note">*Или не наши?</p>
+    </section>
+  </main>
+  <footer>
+    <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
+    <label><input class="hide" type="checkbox">
+      <p>Нажми на сердечко, плиз</p>
+      <div class="like"></div>
+    </label>
+  </footer>
+  <script>
+    btn_mobile.addEventListener("click", function () {
+      menu_mobile.classList.toggle("menu_is-open");
+      btn_mobile.classList.toggle("btn_is-open");
+    });
+  </script>
+</body>
+
+</html>

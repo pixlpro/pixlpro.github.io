@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link href="../css/project.css" type="text/css" rel="stylesheet" />
+  <link href="../css/smartbook.css" type="text/css" rel="stylesheet" />
+  <link href="../css/animate.css" type="text/css" rel="stylesheet" />
+  <title>Ele</title>
+</head>
+
+<body>
+  <header>
+    <div id="menu_mobile" class="menu_mobile">
+      <div id="btn_mobile" class="btn_mobile"></div>
+      <div id="space"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#main"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Главная</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#about"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">О нас</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#projects"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Проекты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#contacts"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Контакты</div>
+              </button></a>
+          </li>
+        </ul>
+    </div>
+    <div id="menu">
+      <nav>
+        <ul>
+          <li>
+            <div id="icon"><a href="../#main"></a></div>
+          </li>
+          <li><a href="../#about">О нас</a></li>
+          <li><a href="../#projects">Проекты</a></li>
+          <li><a href="../#contacts">Контакты</a></li>
+          <li><a href="../#">Скачать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="project">
+      <h1>Памятники природы Александроского района</h1>
+      <p class="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius numquam, voluptatem odio aliquam illum ex,
+        officiis hic, porro fugiat voluptas quos nemo similique accusamus dolore deserunt enim? Velit, perferendis
+        voluptates.
+      </p>
+      <div id="carousel">
+        <div id="screenshot_1" class="screenshot"></div>
+        <div id="screenshot_2" class="screenshot"></div>
+        <br>
+      <a id="download_btn" href="#projects"><button class="gradient_btn">
+          <div class="sub_btn"></div>
+          <div class="text_btn">Скачать</div>
+        </button></a>
+    </section>
+    
+  </main>
+  <footer>
+      
+    <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
+    <label><input class="hide" type="checkbox">
+      <p>Нажми на сердечко, плиз</p>
+      <div class="like"></div>
+    </label>
+  </footer>
+  <script>
+    btn_mobile.addEventListener("click", function () {
+      menu_mobile.classList.toggle("menu_is-open");
+      btn_mobile.classList.toggle("btn_is-open");
+    });
+  </script>
+</body>
+
+</html>
