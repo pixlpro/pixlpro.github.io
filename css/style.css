@@ -266,7 +266,7 @@ section {
   position: relative;
 }
 #space {
-  height: 100px;
+  height: 12vh;
   width: 100%;
 }
 #overlay {
