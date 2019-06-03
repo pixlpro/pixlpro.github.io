@@ -229,14 +229,14 @@ section {
   border-radius: 40px;
 }
 #menu_mobile li {
-  margin: 50px;
+  margin: 5vh;
   padding-left: 15vw;
 }
 .gradient_btn {
   position: relative;
   overflow: hidden;
   height: 60px;
-  width: 200px;
+  width: 50vw;
   text-align: center;
   color: white;
   font-family: Arial;
@@ -256,8 +256,8 @@ section {
   border-radius: 50%;
 }
 .gradient_btn:hover > .sub_btn {
-  height: 600px;
-  width: 600px;
+  height: 50vw;
+  width: 50vw;
   left: -150px;
   top: -250px;
   width: 600px;
