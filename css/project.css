@@ -41,7 +41,7 @@ h1 {
 .screenshot:hover {
   height: 45vh;
   width: 90vw;
-  margin-left: 2%;
+  margin-left: 3vw;
 }
 #screenshot_1 {
   margin-top: 60px;
@@ -183,6 +183,9 @@ h1 {
   }
   .screenshot {
     margin-left: 7.5vw;
+  }
+  .screenshot:hover {
+    margin-left: 4.5vw;
   }
 }
 @media (min-width: 1152px) {
