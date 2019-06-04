@@ -176,6 +176,18 @@ h1 {
     padding-top: 100px;
     padding-left: 100px;
   }
+  #download_btn {
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+  }
+  #carousel {
+    margin: auto;
+    padding-bottom: 60px;
+    padding-left: calc(10vw - 40px);
+  }
+}
+@media (min-width: 1366px) {
   .screenshot {
     filter: grayscale(100%);
     margin: auto;
@@ -189,18 +201,6 @@ h1 {
     height: 50vh;
     width: 40vw;
   }
-  #download_btn {
-    display: inline-block;
-    height: 60px;
-    width: 200px;
-  }
-  #carousel {
-    margin: auto;
-    padding-bottom: 60px;
-    padding-left: calc(10vw - 40px);
-  }
-}
-@media (min-width: 1366px) {
   .supported {
     display: flex;
   }
