@@ -1,0 +1,14 @@
+#screenshot_1 {
+    background: url("../img/screen_savetheprincess_1.webp") 50% / cover no-repeat;
+}
+#screenshot_2 {
+    background: url("../img/screen_savetheprincess_2.webp") 50% / cover no-repeat;
+}
+@media (min-width: 768px) {
+    #screenshot_1 {
+        background: url("../img/screen_savetheprincess_1.webp") 50% / contain no-repeat;
+    }
+    #screenshot_2 {
+        background: url("../img/screen_savetheprincess_2.webp") 50% / contain no-repeat;
+    }
+}
