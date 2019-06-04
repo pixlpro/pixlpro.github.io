@@ -181,6 +181,9 @@ h1 {
     height: 60px;
     width: 200px;
   }
+  #center_text {
+    padding-top: 80px;
+  }
   .screenshot {
     margin-left: 7.5vw;
   }
@@ -217,5 +220,8 @@ h1 {
   }
   #center_text {
     font-size: 2rem;
+  }
+  #center_text {
+    padding-top: 0px;
   }
 }
