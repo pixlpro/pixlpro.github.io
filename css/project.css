@@ -181,13 +181,13 @@ h1 {
     height: 60px;
     width: 200px;
   }
+}
+@media (min-width: 1366px) {
   #carousel {
     margin: auto;
     padding-bottom: 60px;
     padding-left: calc(10vw - 40px);
   }
-}
-@media (min-width: 1366px) {
   .screenshot {
     filter: grayscale(100%);
     margin: auto;
