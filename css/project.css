@@ -181,6 +181,9 @@ h1 {
     height: 60px;
     width: 200px;
   }
+  .screenshot {
+    margin-left: 7.5vw;
+  }
 }
 @media (min-width: 1152px) {
   #carousel {
