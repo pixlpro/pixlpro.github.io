@@ -1,0 +1,227 @@
+main {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+footer {
+  margin-top: 60px;
+}
+#menu {
+  position: fixed;
+}
+h1 {
+  width: 80vw;
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+  text-shadow: none;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.description {
+  width: 80vw;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.screenshot {
+  display: inline-block;
+  height: 40vh;
+  width: 85vw;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5vw;
+  transition: 0.5s;
+}
+.screenshot:hover {
+  height: 45vh;
+  width: 90vw;
+  margin-left: 3vw;
+}
+#screenshot_1 {
+  margin-top: 60px;
+}
+#download_btn {
+  display: none;
+}
+#sub_btn_project {
+    height: 600px;
+    width: 600px;
+}
+#btn_right {
+    margin-left: calc(83vw - 200px);
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: .7rem 2rem;
+  margin: 6px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: .2s ease-out;
+  animation: gradient_default 20s linear infinite;
+}
+.radial-out {
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.radial-out:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: gradient_hover 20s linear infinite;
+  border-radius: 40%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  z-index: -1;
+  content: "";
+}
+.radial-out:hover:before {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+.supported {
+  display: none;
+  width: 100vw;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.supported_unit {
+  margin: 0px 30px;
+  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  transition: 2s;
+  transform: rotate3d(0, 1, 0, 0deg);
+}
+.supported_unit:hover {
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+#center_text {
+  width: 100vw;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0px;
+}
+#supported_unit_1 {
+  background: url("../img/develnext.webp") 50% / contain no-repeat;
+}
+#supported_unit_2 {
+  background: url("../img/mshp.webp") 50% / contain no-repeat;
+}
+#supported_unit_3 {
+  background: url("../img/php.webp") 50% / contain no-repeat;
+}
+#supported_unit_4 {
+  background: url("../img/javafx.webp") 50% / contain no-repeat;
+}
+#supported_unit_5 {
+  background: url("../img/css.webp") 50% / contain no-repeat;
+}
+#supported_unit_6 {
+  background: url("../img/dyn4j.webp") 50% / contain no-repeat;
+}
+#supported_unit_7 {
+  background: url("../img/icons8.webp") 50% / contain no-repeat;
+}
+#supported_unit_8 {
+  background: url("../img/wikipedia.webp") 50% / contain no-repeat;
+}
+#supported_unit_9 {
+  background: url("../img/kenney.webp") 50% / contain no-repeat;
+}
+.supported_mobile {
+  height: 50px;
+  width: 100vw;
+  animation: supported 30s linear infinite;
+  transform: rotate3d(0, 1, 0, 0deg);
+  margin-bottom: 2vh;
+  transition: 2s;
+}
+@media (min-width: 768px) {
+  main {
+    height: auto;
+  }
+  #project {
+    height: auto;
+  }
+  h1 {
+    font-size: 4rem;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  .description {
+    font-size: 2rem;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  #download_btn {
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+  }
+  #center_text {
+    padding-top: 80px;
+  }
+  .screenshot {
+    margin-left: 7.5vw;
+  }
+  .screenshot:hover {
+    margin-left: 4.5vw;
+  }
+}
+@media (min-width: 1152px) {
+  #carousel {
+    margin: auto;
+    padding-bottom: 60px;
+    padding-left: calc(10vw - 40px);
+  }
+  .screenshot {
+    filter: grayscale(100%);
+    margin: auto;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .screenshot:hover {
+    filter: grayscale(0%);
+    height: 50vh;
+    width: 40vw;
+  }
+}
+@media (min-width: 1366px) {
+  .supported {
+    display: flex;
+  }
+  .supported_mobile {
+    display: none;
+  }
+  #center_text {
+    font-size: 2rem;
+  }
+  #center_text {
+    padding-top: 0px;
+  }
+}

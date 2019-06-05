@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link href="../css/project.css" type="text/css" rel="stylesheet" />
+  <link href="../css/savetheprincess.css" type="text/css" rel="stylesheet" />
+  <link href="../css/animate.css" type="text/css" rel="stylesheet" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <title>Ele Official Site</title>
+</head>
+
+<body>
+  <header>
+    <div id="menu_mobile" class="menu_mobile">
+      <div id="btn_mobile" class="btn_mobile"></div>
+      <div id="space"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../#main"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Главная</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#about"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">О нас</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#projects"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Проекты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#contacts"><button class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Контакты</div>
+              </button></a>
+          </li>
+        </ul>
+    </div>
+    <div id="menu">
+      <nav>
+        <ul>
+          <li>
+            <div id="icon"><a href="../#main"></a></div>
+          </li>
+          <li><a href="../#about">О нас</a></li>
+          <li><a href="../#projects">Проекты</a></li>
+          <li><a href="../#contacts">Контакты</a></li>
+          <li><a href="https://drive.google.com/open?id=19TzKjhh3ehMkCoT5I7PYsglA42T3l7i0">Скачать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="project">
+      <h1>Save the Princess</h1>
+      <p class="description">
+        «Save the Princess» предоставляет возможность совершенствовать интеллектуальные навыки, развить логическое
+        мышление, быстроту реакции, обучиться программированию в игровой форме и развлечься. Игра выполнена в жанре Beat
+        ’em up, с элементами Action-adventure и платформера, что добавляет в игру разнообразие. Основной чертой данного
+        жанра является схватка главного героя против большого количества врагов. Также он сочетает в себе элементы
+        квеста и экшена.
+      </p>
+      <div id="carousel">
+        <div id="screenshot_1" class="screenshot"></div>
+        <div id="screenshot_2" class="screenshot"></div>
+        <br>
+        <a href="https://drive.google.com/open?id=1FkMKoOia80DEm7T6VxIXgQoCD-Sfu0A_" id="btn_right"><button id="download_btn" class="btn radial-out">
+            <div id="sub_btn_project" class="sub_btn"></div>
+            <div class="text_btn">Скачать</div>
+          </button></a>
+      </div>
+      <p id="center_text" class="description">
+        Thank you very much!
+      </p>
+      <div class="supported">
+        <div id="supported_unit_1" class="supported_unit"></div>
+        <div id="supported_unit_2" class="supported_unit"></div>
+        <div id="supported_unit_3" class="supported_unit"></div>
+        <div id="supported_unit_4" class="supported_unit"></div>
+        <div id="supported_unit_5" class="supported_unit"></div>
+        <div id="supported_unit_6" class="supported_unit"></div>
+        <div id="supported_unit_7" class="supported_unit"></div>
+        <div id="supported_unit_8" class="supported_unit"></div>
+        <div id="supported_unit_9" class="supported_unit"></div>
+      </div>
+      <br>
+      <div class="supported_mobile">
+
+      </div>
+      <br>
+    </section>
+
+  </main>
+  <footer>
+
+    <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
+    <label><input class="hide" type="checkbox">
+      <p>Нажми на сердечко, плиз</p>
+      <div class="like"></div>
+    </label>
+  </footer>
+  <script>
+    btn_mobile.addEventListener("click", function () {
+      menu_mobile.classList.toggle("menu_is-open");
+      btn_mobile.classList.toggle("btn_is-open");
+    });
+  </script>
+</body>
+
+</html>
