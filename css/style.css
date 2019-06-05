@@ -256,11 +256,10 @@ section {
   border-radius: 50%;
 }
 .gradient_btn:hover > .sub_btn {
-  height: 50vw;
-  width: 50vw;
-  left: -150px;
-  top: -250px;
-  width: 600px;
+  height: 100vw;
+  width: 100vw;
+  left: -25vw;
+  top: -30vw;
 }
 .text_btn {
   position: relative;

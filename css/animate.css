@@ -72,3 +72,45 @@
     width: 70vw;
   }
 }
+@keyframes supported {
+  from {
+    background: url("../img/develnext.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  11% {
+    background: url("../img/mshp.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  22% {
+    background: url("../img/php.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  33% {
+    background: url("../img/javafx.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  44% {
+    background: url("../img/css.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  55% {
+    background: url("../img/dyn4j.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  66% {
+    background: url("../img/icons8.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  77% {
+    background: url("../img/wikipedia.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  88% {
+    background: url("../img/kenney.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    background: url("../img/develnext.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
