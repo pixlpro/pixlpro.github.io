@@ -52,24 +52,24 @@
 }
 @keyframes hr {
   from {
-    width: 5vw;
+    width: 40vw;
   }
   50% {
-    width: 70vw;
+    width: 60vw;
   }
   to {
-    width: 5vw;
+    width: 40vw;
   }
 }
 @keyframes hr_alternate {
   from {
-    width: 70vw;
+    width: 60vw;
   }
   50% {
-    width: 5vw;
+    width: 40vw;
   }
   to {
-    width: 70vw;
+    width: 60vw;
   }
 }
 @keyframes supported {

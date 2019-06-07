@@ -229,6 +229,7 @@ section {
   border-radius: 40px;
 }
 #menu_mobile li {
+  list-style-type: none;
   margin: 5vh;
   padding-left: 15vw;
 }
