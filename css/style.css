@@ -134,9 +134,6 @@ section {
 .circle_photo_contacts {
   margin-left: calc(50vw - 160px);
 }
-#email {
-  margin-left: calc(50vw - 180px);
-}
 .description {
   margin: 0;
   font-size: 1.5rem;
@@ -332,6 +329,7 @@ section {
 }
 #email {
   background-image: url("../img/email.webp");
+  margin-left: calc(50vw - 180px);
 }
 .like {
   position: absolute;
