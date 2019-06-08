@@ -135,6 +135,9 @@ section {
 .circle_photo_contacts {
   margin-left: calc(50vw - 160px);
 }
+.circle_photo_contacts a {
+  transition: 1s;
+}
 .description {
   margin: 0;
   font-size: 1.5rem;
