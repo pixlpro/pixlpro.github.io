@@ -134,6 +134,9 @@ section {
 .circle_photo_contacts {
   margin-left: calc(50vw - 160px);
 }
+#email {
+  margin-left: calc(50vw - 180px);
+}
 .description {
   margin: 0;
   font-size: 1.5rem;
@@ -399,6 +402,9 @@ section {
   }
   .circle_photo_contacts {
     margin-left: calc(50vw - 220px);
+  }
+  #email {
+    margin-left: calc(50vw - 240px);
   }
   .note {
     font-size: 1.5em;
