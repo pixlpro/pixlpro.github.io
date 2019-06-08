@@ -442,6 +442,9 @@ section {
   .like {
     right: 40px;
   }
+  .hr {
+    width: 30vw;
+  }
 }
 @media (min-width: 1366px) {
   #menu {
@@ -454,8 +457,5 @@ section {
     transform: rotate3d(2, 1, 0, 180deg);
     height: 50vh;
     width: 50vh;
-  }
-  hr {
-    width: 30vw;
   }
 }
