@@ -85,6 +85,7 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 5px;
+  width: 70vw;
   border-radius: 10px;
   animation: hr 4s linear infinite, gradient_default 20s linear infinite;
 }
@@ -453,5 +454,8 @@ section {
     transform: rotate3d(2, 1, 0, 180deg);
     height: 50vh;
     width: 50vh;
+  }
+  hr {
+    width: 30vw;
   }
 }
