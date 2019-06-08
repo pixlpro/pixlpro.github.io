@@ -87,10 +87,10 @@ section {
   height: 5px;
   width: 70vw;
   border-radius: 10px;
-  animation: hr 4s linear infinite, gradient_default 20s linear infinite;
+  animation: gradient_default 20s linear infinite;
 }
 .hr_alternate {
-  animation: hr_alternate 4s linear infinite, gradient_hover 20s linear infinite;
+  animation: gradient_hover 20s linear infinite;
 }
 .note {
   color: rgb(211, 211, 211);
