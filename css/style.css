@@ -329,7 +329,10 @@ section {
 }
 #email {
   background-image: url("../img/email.webp");
-  margin-left: calc(50vw - 180px);
+  margin-left: calc(50vw - 165px);
+}
+#email h4 {
+  padding-left: 80px;
 }
 .like {
   position: absolute;
@@ -403,6 +406,9 @@ section {
   }
   #email {
     margin-left: calc(50vw - 240px);
+  }
+  #email h4 {
+    padding-left: 100px;
   }
   .note {
     font-size: 1.5em;
