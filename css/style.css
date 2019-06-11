@@ -338,6 +338,22 @@ section {
 #email h4 {
   padding-left: 80px;
 }
+.vk {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 24px);
+  left: 20px;
+  height: 48px;
+  width: 48px;
+  background: white;
+  background: url("../img/vk.webp") 50% / cover no-repeat;
+  transition: 1s;
+  transform: rotate3d(0, 1, 0, 0deg);
+}
+.vk:hover {
+  opacity: 0.5;
+  transform: rotate3d(0, 1, 0, 360deg);
+}
 .like {
   position: absolute;
   display: inline-block;
@@ -458,6 +474,9 @@ section {
   }
   .hr {
     width: 30vw;
+  }
+  .vk {
+    left: 30px;
   }
 }
 @media (min-width: 1366px) {
