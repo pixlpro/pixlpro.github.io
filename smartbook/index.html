@@ -106,13 +106,18 @@
 
   </main>
   <footer>
-    <a href="https://vk.com/elevk"><div class="vk"></div></a>
     <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
     <label><input class="hide" type="checkbox">
       <p>Нажми на сердечко, плиз</p>
       <div class="like"></div>
     </label>
   </footer>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+  <script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 167673534, { expandTimeout: "30000", widgetPosition: "left", tooltipButtonText: "Есть вопрос?" });
+  </script>
   <script>
     btn_mobile.addEventListener("click", function () {
       menu_mobile.classList.toggle("menu_is-open");

@@ -52,18 +52,18 @@
         </ul>
     </div>
     <div id="menu">
-        <nav>
-          <ul>
-            <li>
-              <div id="icon"><a href="#main"></a></div>
-            </li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-            <li><a href="https://drive.google.com/file/d/19TzKjhh3ehMkCoT5I7PYsglA42T3l7i0/view">Скачать</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li>
+            <div id="icon"><a href="#main"></a></div>
+          </li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="https://drive.google.com/file/d/19TzKjhh3ehMkCoT5I7PYsglA42T3l7i0/view">Скачать</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section id="main">
@@ -115,24 +115,42 @@
     <section id="contacts">
       <h2 id="tagline">Да прибудет с Вами связь!</h2>
       <h3 class="our_text">Наши контакты*</h3>
-      <div id="phone" class="circle_photo circle_photo_contacts">
-        <h4 class="name photo_text_contacts"><a href="tel:+79627428848">8 (962) 742-88-48</a></h4>
-      </div>
+      <a href="tel:+79627428848">
+        <div id="phone" class="contacts_icon circle_photo circle_photo_contacts">
+          <h4 class="name photo_text_contacts">8 (962) 742-88-48</h4>
+        </div>
+      </a>
       <div class="hr"></div>
-      <div id="email" class="circle_photo circle_photo_contacts">
-        <h4 class="name photo_text_contacts"><a href="mailto:vova.vartanian@bk.ru">vova.vartanian@bk.ru</a></h4>
-      </div>
+      <a href="mailto:vova.vartanian@bk.ru">
+        <div id="email" class="contacts_icon circle_photo circle_photo_contacts">
+          <h4 class="name photo_text_contacts">vova.vartanian@bk.ru</h4>
+        </div>
+      </a>
+      <div class="hr"></div>
+      <a href="https://vk.com/elevk">
+        <div id="vk" class="contacts_icon circle_photo circle_middle">
+          <h4 class="name photo_text photo_text_small">Ele</h4>
+        </div>
+      </a>
       <p class="note">*Или не наши?</p>
     </section>
   </main>
   <footer>
-    <a href="https://vk.com/elevk"><div class="vk"></div></a>
+    <a href="https://vk.com/elevk">
+      <div class="vk"></div>
+    </a>
     <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
     <label><input class="hide" type="checkbox">
       <p>Нажми на сердечко, плиз</p>
       <div class="like"></div>
     </label>
   </footer>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+  <!-- VK Widget -->
+  <div id="vk_community_messages"></div>
+  <script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 167673534, { expandTimeout: "30000", widgetPosition: "left", tooltipButtonText: "Есть вопрос?" });
+  </script>
   <script>
     btn_mobile.addEventListener("click", function () {
       menu_mobile.classList.toggle("menu_is-open");
