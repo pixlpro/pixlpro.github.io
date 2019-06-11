@@ -107,6 +107,8 @@ section {
   border-radius: 50%;
   background: 50% / cover no-repeat;
   margin-left: calc(50vw - 110px);
+  transition: 2s;
+  transform: rotate3d(0, 1, 0, 0deg);
 }
 .circle_middle {
   margin-left: calc(50vw - 120px);
@@ -138,9 +140,8 @@ section {
   width: 200px;
   margin-top: 25px;
 }
-.photo_text_small {
-  width: 50px;
-  padding-left: 100px;
+.photo_text_vk {
+  padding-left: 80px;
 }
 .circle_photo_contacts {
   margin-left: calc(50vw - 160px);
@@ -347,7 +348,7 @@ section {
 }
 #vk {
   background-image: url("../img/vk.webp");
-  margin-left: calc(50vw - 80px);
+  margin-left: calc(50vw - 140px);
 }
 #email h4 {
   padding-left: 80px;
@@ -412,6 +413,9 @@ section {
   .photo_text_contacts {
     width: 250px;
     margin-top: 25px;
+  }
+  .photo_text_vk {
+    padding-left: 140px;
   }
   .description {
     font-size: 2rem;
@@ -480,7 +484,7 @@ section {
     display: inline-block;
   }
   #vk {
-    margin-left: calc(50vw - 105px);
+    margin-left: calc(50vw - 190px);
   }
 }
 @media (min-width: 1366px) {
@@ -495,7 +499,7 @@ section {
     height: 50vh;
     width: 50vh;
   }
-  #vk {
-    margin-left: calc(50vw - 120px);
+  .circle_photo:hover {
+    transform: rotate3d(0, 1, 0, 15deg);
   }
 }
