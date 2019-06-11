@@ -121,6 +121,12 @@ section {
 .app_icon:hover {
   opacity: 0.6;
 }
+.contacts_icon {
+  transition: 0.5s;
+}
+.contacts_icon:hover {
+  opacity: 0.6;
+}
 .photo_text {
   width: 100px;
   margin-top: 20px;
@@ -131,6 +137,10 @@ section {
 .photo_text_contacts {
   width: 200px;
   margin-top: 25px;
+}
+.photo_text_small {
+  width: 50px;
+  padding-left: 100px;
 }
 .circle_photo_contacts {
   margin-left: calc(50vw - 160px);
@@ -335,24 +345,12 @@ section {
   background-image: url("../img/email.webp");
   margin-left: calc(50vw - 165px);
 }
+#vk {
+  background-image: url("../img/vk.webp");
+  margin-left: calc(50vw - 80px);
+}
 #email h4 {
   padding-left: 80px;
-}
-.vk {
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 24px);
-  left: 20px;
-  height: 48px;
-  width: 48px;
-  background: white;
-  background: url("../img/vk.webp") 50% / cover no-repeat;
-  transition: 1s;
-  transform: rotate3d(0, 1, 0, 0deg);
-}
-.vk:hover {
-  opacity: 0.5;
-  transform: rotate3d(0, 1, 0, 360deg);
 }
 .like {
   position: absolute;
@@ -372,6 +370,9 @@ section {
   width: 42px;
   height: 42px;
   background: url("../img/like.webp") 50% / cover no-repeat;
+}
+#vk_community_messages {
+  display: none;
 }
 @media (min-width: 768px) {
   main {
@@ -475,8 +476,11 @@ section {
   .hr {
     width: 30vw;
   }
-  .vk {
-    left: 30px;
+  #vk_community_messages {
+    display: inline-block;
+  }
+  #vk {
+    margin-left: calc(50vw - 105px);
   }
 }
 @media (min-width: 1366px) {
@@ -490,5 +494,8 @@ section {
     transform: rotate3d(2, 1, 0, 180deg);
     height: 50vh;
     width: 50vh;
+  }
+  #vk {
+    margin-left: calc(50vw - 120px);
   }
 }
