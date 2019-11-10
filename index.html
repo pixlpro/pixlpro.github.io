@@ -5,154 +5,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="refresh" content="2; https://ele-group.github.io/">
   <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link href="css/animate.css" type="text/css" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <title>Ele Official Site</title>
 </head>
 
 <body>
-  <header>
-    <div id="menu_mobile" class="menu_mobile">
-      <div id="btn_mobile" class="btn_mobile"></div>
-      <div id="space"></div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#main"><button class="gradient_btn">
-                <div class="sub_btn"></div>
-                <div class="text_btn">Главная</div>
-              </button></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#about"><button class="gradient_btn">
-                <div class="sub_btn"></div>
-                <div class="text_btn">О нас</div>
-              </button></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#projects"><button class="gradient_btn">
-                <div class="sub_btn"></div>
-                <div class="text_btn">Проекты</div>
-              </button></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#contacts"><button class="gradient_btn">
-                <div class="sub_btn"></div>
-                <div class="text_btn">Контакты</div>
-              </button></a>
-          </li>
-        </ul>
-    </div>
-    <div id="menu">
-      <nav>
-        <ul>
-          <li>
-            <div id="icon"><a href="#main"></a></div>
-          </li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#projects">Проекты</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-          <li><a href="https://drive.google.com/file/d/19TzKjhh3ehMkCoT5I7PYsglA42T3l7i0/view">Скачать</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section id="main">
-      <video id="overlay" src="background.mp4" poster="/img/poster.webp" autoplay loop muted></video>
-      <div id="main_img" class="visible"></div>
-      <h1 class="visible">Ele</h1>
-    </section>
-    <section id="about">
-      <h2 id="tagline">Вместе мы сделаем этот мир лучше*</h2>
-      <h3 class="our_text">Наша команда</h3>
-      <div id="about_img" class="circle_photo">
-        <h4 class="name">Владимир Вартанян</h4>
-      </div>
-      <p class="description">
-        Обычный школьник, очкарик &#129299;, супер-программист <br />
-        Очень умный, добрый и скромный человек <br /><br />
-        А ещё ленивый и
-      </p>
-      <div id="blur_text">
-        <p id="oh_text">Ой</p>
-      </div>
-      <p class="note">*Но это не точно</p>
-    </section>
-    <section id="projects">
-      <h2 id="tagline">Красивый заголовок*</h2>
-      <h3 class="our_text">Наши проекты</h3>
-      <a href="./smartbook">
-        <div id="smartbook_img" class="app_icon circle_photo circle_middle">
-          <h4 class="name photo_text">Smartbook</h4>
-        </div>
-      </a>
-      <div class="hr"></div>
-      <a href="./savetheprincess">
-        <div id="savetheprincess_img" class="app_icon circle_photo circle_middle">
-          <h4 class="name photo_text photo_text_double">Save the Princess</h4>
-        </div>
-      </a>
-      <div class="hr hr_alternate"></div>
-      <a href="./monuments">
-        <div id="monuments_img" class="app_icon circle_photo circle_middle">
-          <h4 class="name photo_text">Monuments</h4>
-        </div>
-      </a>
-      <p class="description">
-        <b>Нажми</b> на иконку приложения, чтобы "скачать"
-      </p>
-      <p class="note">*Необходимо наличие Ele на ПК. <br> Пока что только для Windows.</p>
-    </section>
-    <section id="contacts">
-      <h2 id="tagline">Да прибудет с Вами связь!</h2>
-      <h3 class="our_text">Наши контакты*</h3>
-      <a href="tel:+79627428848">
-        <div id="phone" class="contacts_icon circle_photo circle_photo_contacts">
-          <h4 class="name photo_text_contacts">8 (962) 742-88-48</h4>
-        </div>
-      </a>
-      <div class="hr"></div>
-      <a href="mailto:vova.vartanian@bk.ru">
-        <div id="email" class="contacts_icon circle_photo circle_photo_contacts">
-          <h4 class="name photo_text_contacts">vova.vartanian@bk.ru</h4>
-        </div>
-      </a>
-      <div class="hr"></div>
-      <a href="https://vk.com/elevk">
-        <div id="vk" class="contacts_icon circle_photo circle_photo_contacts">
-          <h4 class="name photo_text_contacts photo_text_vk">Мы ВКонтакте</h4>
-        </div>
-      </a>
-      <p class="note">*Или не наши?</p>
-    </section>
-  </main>
-  <footer>
-    <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
-    <label><input class="hide" type="checkbox">
-      <p>Нажми на сердечко, плиз</p>
-      <div class="like"></div>
-    </label>
-  </footer>
-  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
-  <!-- VK Widget -->
-  <div id="vk_community_messages"></div>
-  <script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 167673534, { expandTimeout: "30000", widgetPosition: "left", tooltipButtonText: "Есть вопрос?" });
-  </script>
-  <script>
-    btn_mobile.addEventListener("click", function () {
-      menu_mobile.classList.toggle("menu_is-open");
-      btn_mobile.classList.toggle("btn_is-open");
-    });
+  <!-- Preloader -->
+  <style type="text/css">
+    #hellopreloader>p {
+      display: none;
+    }
+    #hellopreloader_preload {
+      display: block;
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 100px;
+      background: #F64747 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;
+      background-size: 300px;
+    }
+  </style>
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+  </div>
+  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload"); function fadeOutnojquery(el) {
+      el.style.opacity = 1; var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader); hellopreloader.style.display = "none"; }
+      }, 16);
+    } window.onload = function () { setTimeout(function () { fadeOutnojquery(hellopreloader); }, 5000); }; 
   </script>
 </body>
 
